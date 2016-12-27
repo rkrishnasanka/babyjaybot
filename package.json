@@ -24,8 +24,8 @@
     "test": "node_modules/.bin/xo data/jokesFetcher.js bin/bot.js lib/norrisbot.js"
   },
   "author": {
-    "name": "Luciano Mammino",
-    "email": "lucianomammino@gmail.com"
+    "name": "Radhakrishna Sanka",
+    "email": "rkrishnasanka@gmail.com"
   },
   "license": "MIT",
   "engines": {
