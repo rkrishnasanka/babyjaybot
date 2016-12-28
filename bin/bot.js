@@ -3,12 +3,12 @@
 'use strict';
 
 /**
- * NorrisBot launcher script.
+ * BabyJayBot launcher script.
  *
  * @author Luciano Mammino <lucianomammino@gmail.com>
  */
 
-var NorrisBot = require('../lib/norrisbot');
+var BabyJayBot = require('../lib/babyjaybot');
 
 /**
  * Environment variables used to configure the bot:
@@ -19,13 +19,14 @@ var NorrisBot = require('../lib/norrisbot');
  *  BOT_NAME: the username you want to give to the bot within your organisation.
  */
 var token = process.env.BOT_API_KEY || require('../token');
+console.log(token);
 var dbPath = process.env.BOT_DB_PATH;
 var name = process.env.BOT_NAME;
 
-var norrisbot = new NorrisBot({
+var babyjaybot = new BabyJayBot({
     token: token,
     dbPath: dbPath,
     name: name
 });
 
-norrisbot.run();
+babyjaybot.run();
